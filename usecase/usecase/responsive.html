@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Paradise</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            height:100vh;
+        }
+
+        /* Header Styling */
+        header {
+            background-image: url('image3.jpeg');
+            background-size: cover;
+            background-color: #5c8c1a;
+            color: rgb(182, 110, 15);
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header img {
+            width: 80px; /* Logo size */
+            height: 80px;
+            position: absolute;
+            left: 20px; /* Adjusted for better alignment */
+            top: 50%; /* Vertically center the logo */
+            transform: translateY(-50%);
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #12230a;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            position: relative;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        /* Dropdown Menu Styling */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #12230a;
+            min-width: 160px;
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 12px 16px;
+            font-size: 16px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #4CAF50;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: 200px;
+            background-color: #184702;
+            color: white;
+            padding: 20px;
+            float: left;
+            height: 100vh;
+            margin-top: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        /* Main Content Styling */
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            background-image: url('image1.jpeg');
+            background-size: cover;
+            color: white;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            min-height: 100vh;
+            margin-top: 20px;
+        }
+
+        .content h2 {
+            font-size: 30px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #1e2219;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            clear: both;
+        }
+
+        /* Responsive Design for Mobile and Small Screens */
+        @media (max-width: 768px) {
+            /* Header and Logo Styling */
+            header {
+                text-align: center;
+                padding: 15px;
+            }
+
+            header img {
+                width: 60px;
+                height: 60px;
+                position: relative;
+                margin: 0 auto;
+                top: auto;
+                transform: none;
+            }
+
+            /* Sidebar and Content Layout */
+            .sidebar {
+                width: 100%; /* Full width sidebar on small screens */
+                margin-top: 10px;
+                float: none; /* Remove float for full-width layout */
+                height: auto; /* Allow sidebar to grow with content */
+            }
+
+            .content {
+                margin-left: 0;
+                padding: 15px;
+            }
+
+            /* Navigation Bar: Stack Links Vertically */
+            nav ul li {
+                display: block;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+                text-align: left;
+            }
+           
+        }
+
+        /* Further Responsiveness for Small Mobile Screens */
+        @media (max-width: 480px) {
+            /* Reduce logo size for very small screens */
+            header img {
+                width: 50px;
+                height: 50px;
+            }
+
+            /* Reduce font sizes */
+            header h1 {
+                font-size: 24px;
+            }
+
+            nav ul li a {
+                font-size: 14px;
+            }
+
+            .content h2 {
+                font-size: 24px;
+            }
+
+            footer p {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <img src="logo1.jpeg" alt="Nature's Paradise Logo">
+        <h1>Nature's Paradise</h1>
+        <p>Make your Home a Greener Place !!</p>
+       <a href="login.html" target="_blank" style="float:right; text-decoration: none; color: rgb(150, 103, 17); margin-bottom:500px">Login</a> 
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+            <a href="#">Products</a>
+            <div class="dropdown-content">
+                <a href="#">Bonsai</a>
+                <a href="#">Flower saplings</a>
+                <a href="#">Fruit saplings</a>
+                <a href="#">Organic manure</a>
+                <a href="#">Gardening tools</a>
+                <a href="#">Vegetable saplings</a>
+                <a href="#">Fruit seeds</a>
+                <a href="#">Vegetable seeds</a>
+            </div>
+        </li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Feedback</a></li>
+    </ul>
+</nav>
+
+<div class="sidebar">
+    <h3>Product Categories</h3>
+    <ul>
+        <li>Bonsai</li>
+        <li>Flower saplings</li>
+        <li>Fruit saplings</li>
+        <li>Organic manure</li>
+        <li>Gardening tools</li>
+        <li>Vegetable saplings</li>
+        <li>Fruit seeds</li>
+        <li>Vegetable seeds</li>
+    </ul>
+</div>
+
+<div class="content">
+    <h2><pre>   
+    Anything and 
+    Everything to MAKE 
+    and MAINTAIN your 
+    Garden ...</pre></h2>
+</div>
+
+<footer>
+    <p>&copy; 2024 Nature's Paradise</p>
+</footer>
+
+</body>
+</html>
